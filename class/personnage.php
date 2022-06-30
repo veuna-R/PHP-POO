@@ -55,5 +55,20 @@
                     $this->vie = 0;
                 }
             }
+
+            public function attaque($cible) {
+        
+        
+                /* $cible represente l'objet passé en paramètre =>en l'occurence cet objet est mario // ici $cible  =$mario*/
+                // $this représente l'attaquent
+                //$cible représente la personne attaquée
+                /*les points de vie de la cible 
+         les points d'attaque de l'attaquant */
+        
+                $cible->vie -= $this->atk;
+                /*  ici je veux afficher quelque chose sur ma page affichage, je dois utiliser return*/
+        
+                $cible->empecher_negatif();
+            }
     }
 ?>

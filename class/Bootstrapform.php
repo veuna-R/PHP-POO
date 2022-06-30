@@ -4,7 +4,7 @@ class BootstrapForm extends Form
 {
     protected function surround($html)
     {
-        return "<div class=\"mb-3\">{$html}</div>";
+        return "<div class=\"mb-3 mt-3 col-md-6\">{$html}</div>";
     }
 
     public function input($name)
@@ -26,7 +26,7 @@ class BootstrapForm extends Form
     public function submit()
     {
         return $this->surround(
-            '<button type="submit" class="btn btn-primary">ENVOYER</button>'
+            '<button type="submit" class="btn btn-info">ENVOYER</button>'
         );
     }
 }
